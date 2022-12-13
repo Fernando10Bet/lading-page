@@ -99,6 +99,7 @@ $black: #191919;
     overflow: hidden;
     #movilHeader {
         display: none;
+        margin-top: 2rem;
     }
     .header-bg {
         background-image: url(./assets/header/bg.png);
@@ -138,9 +139,20 @@ $black: #191919;
                 }
             }
             h2 {
-                font-size: 28px;
+                font-size: 45px;
                 font-weight: bold;
                 margin-bottom: 1rem;
+                font-weight: bold;
+                color:$black;
+                @include center;
+                flex-direction: column;
+                &:after{
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    background-color: $green;
+                    border: 1px solid $green;
+                }
             }
             h1 {
                 font-size: 45px;
@@ -229,9 +241,9 @@ $black: #191919;
     flex-wrap: wrap;
     box-sizing: border-box;
     div {
-        height: 20rem;
+        height: 24rem;
         width: 31%;
-        max-width: 40rem;
+        max-width: 32rem;
         border-radius: 10px;
         @include bgCenter();
         padding: 1em;
@@ -262,6 +274,7 @@ $black: #191919;
                 position: absolute;
                 width: 80%;
                 height: 100%;
+                max-width: 20rem;
             }
         }
         h4{
@@ -291,9 +304,10 @@ $black: #191919;
             img {
                 position: absolute;
                 top:0;
-                left: 6%;
+                left: 20%;
                 width: 80%;
                 height: 100%;
+                max-width: 20rem;
             }
         }
         h4{
@@ -320,6 +334,7 @@ $black: #191919;
                 bottom: -8%;
                 width: 85%;
                 height: 95%;
+                max-width: 24rem;
             }
         }
         h4{
@@ -335,6 +350,7 @@ $black: #191919;
         margin-top: 1em;
         flex-wrap: wrap;
         border-top: 1.5px solid $black;
+        padding-top: 1rem;
         figure{
             @include center;
             width:6rem;
