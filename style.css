@@ -28,7 +28,7 @@ body {
     top: 100vh;
   }
   100% {
-    top: calc(100vh - 5rem);
+    top: calc(100vh - 6rem);
   }
 }
 .btn_join {
@@ -38,16 +38,16 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  top: calc(100vh - 5rem);
+  top: calc(100vh - 6rem);
   left: 0%;
-  height: 5rem;
+  height: 6rem;
   display: none;
   z-index: 99;
   animation: boton 0.5s;
 }
 .btn_join a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 37px;
   color: #191919;
   background-color: #3ae67a;
   font-weight: bold;
@@ -412,6 +412,17 @@ body {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-content {
+    max-width: 50% !important;
+  }
+  .header-content div:first-of-type h2 {
+    font-size: 39px;
+  }
+  .header-content div:first-of-type h1 {
+    font-size: 79px;
+  }
+}
 @media screen and (max-width: 1050px) {
   body {
     background-image: url(./assets/bg.png) !important;
@@ -448,7 +459,8 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .landing-header .header-content h2, .landing-header .header-content h1 {
+  .landing-header .header-content h2,
+.landing-header .header-content h1 {
     text-align: left;
     font-size: 32px !important;
     max-width: 80%;
