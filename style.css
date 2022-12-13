@@ -1,15 +1,15 @@
 @font-face {
   font-family: "GT-Walsheim-Pro-Bold";
-  src: url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot");
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff2") format("woff2"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff") format("woff"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf") format("truetype");
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot?#iefix") format("embedded-opentype"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff2") format("woff2"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff") format("woff"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf") format("truetype");
   /* Legacy iOS */
 }
 @font-face {
   font-family: "GT-Walsheim-Pro-Regular";
-  src: url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot");
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff2") format("woff2"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"), url("assets/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype");
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot?#iefix") format("embedded-opentype"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff2") format("woff2"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype");
   /* Legacy iOS */
 }
 * {
@@ -21,6 +21,10 @@
 
 body {
   position: relative;
+  background-image: url(./assets/bg.png) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @keyframes boton {
@@ -62,7 +66,7 @@ body {
 .landing-header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -128,7 +132,7 @@ body {
 }
 .landing-header .header-content div:first-of-type h2:after {
   content: "";
-  height: 1px;
+  height: 2px;
   width: 100%;
   background-color: #3ae67a;
   border: 1px solid #3ae67a;
@@ -148,39 +152,6 @@ body {
 }
 .landing-header .header-content div:last-of-type p {
   font-size: 12px;
-}
-.landing-header .header-steps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 5rem;
-}
-.landing-header .header-steps div {
-  width: 33.3333333333%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 2rem;
-}
-.landing-header .header-steps div span {
-  font-weight: bold;
-}
-.landing-header .header-steps div p {
-  text-align: center;
-}
-.landing-header .header-steps div:nth-of-type(1) {
-  background-color: #191919;
-  color: #3ae67a;
-}
-.landing-header .header-steps div:nth-of-type(2) {
-  background-color: #3ae67a;
-  color: #191919;
-}
-.landing-header .header-steps div:nth-of-type(3) {
-  background-color: #191919;
-  color: #3ae67a;
 }
 .landing-header #dados,
 .landing-header #ficha {
@@ -212,6 +183,53 @@ body {
   flex-direction: column;
 }
 
+.header-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.header-steps div {
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 1em 0em;
+}
+.header-steps div p {
+  font-family: "GT-Walsheim-Pro-Bold" !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-steps div p span {
+  font-size: 69px;
+  font-family: "GT-Walsheim-Pro-Bold" !important;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+.header-steps div:nth-of-type(1) {
+  background-color: #191919;
+  color: #3ae67a;
+}
+.header-steps div:nth-of-type(2) {
+  background-color: #3ae67a;
+  color: #191919;
+}
+.header-steps div:nth-of-type(3) {
+  background-color: #191919;
+  color: #3ae67a;
+}
+
 #casino-imgs {
   display: flex;
   justify-content: space-around;
@@ -223,14 +241,14 @@ body {
 }
 #casino-imgs div {
   height: 24rem;
+  max-height: 25rem;
   width: 31%;
-  max-width: 32rem;
+  max-width: 42rem;
   border-radius: 10px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 1em;
   box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #casino-imgs div figure {
   box-sizing: border-box;
@@ -246,6 +264,8 @@ body {
   align-items: flex-start;
   flex-direction: column;
   position: relative;
+  background-image: url(./assets/imgs/1.png);
+  background-position: 40% bottom !important;
 }
 #casino-imgs div:nth-of-type(1) figure {
   position: absolute;
@@ -278,6 +298,8 @@ body {
   justify-content: flex-start;
   align-items: flex-end;
   position: relative;
+  background-image: url(./assets/imgs/2.png);
+  background-position: 40% bottom !important;
 }
 #casino-imgs div:nth-of-type(2) figure {
   position: absolute;
@@ -307,6 +329,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  background-image: url(./assets/imgs/3.png);
+  background-position: center bottom;
 }
 #casino-imgs div:nth-of-type(3) figure {
   display: flex;
@@ -409,18 +433,37 @@ body {
   align-self: flex-start;
   font-size: 12px;
   margin-top: 2rem;
-  font-weight: bold;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1051px) {
   .header-content {
     max-width: 50% !important;
   }
   .header-content div:first-of-type h2 {
-    font-size: 39px;
+    font-size: 39px !important;
   }
   .header-content div:first-of-type h1 {
-    font-size: 79px;
+    font-size: 79px !important;
+  }
+  .header-content div:first-of-type a {
+    font-size: 73px !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #casino-imgs {
+    row-gap: 1.5rem;
+  }
+  #casino-imgs div {
+    width: 45%;
+  }
+  #casino-imgs div:nth-of-type(1) {
+    background-position: 90% bottom !important;
+  }
+  #casino-imgs div:nth-of-type(2) {
+    background-position: 100% bottom !important;
+  }
+  #casino-imgs div:nth-of-type(3) {
+    background-position: 90% bottom !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -459,23 +502,30 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .landing-header .header-content h2,
-.landing-header .header-content h1 {
+  .landing-header .header-content div {
+    width: 100%;
+  }
+  .landing-header .header-content div h2,
+.landing-header .header-content div h1 {
     text-align: left;
     font-size: 32px !important;
-    max-width: 80%;
+    width: auto !important;
+    max-width: 90%;
   }
-  .landing-header .header-content a {
+  .landing-header .header-content div a {
     font-size: 32px !important;
     margin-bottom: 0.5em;
   }
-  .landing-header .header-steps {
+  .header-steps {
     height: auto !important;
     flex-wrap: wrap;
   }
-  .landing-header .header-steps div {
+  .header-steps div {
     width: 100% !important;
-    height: 3em;
+    height: 6em;
+  }
+  .header-steps div p span {
+    margin-right: 0 !important;
   }
   #casino-imgs {
     padding: 2em 0em !important;
