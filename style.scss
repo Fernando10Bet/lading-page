@@ -456,14 +456,14 @@ $gray: #4E454A;
                         height: 150px !important;
                     }
                 }
-                h2 {
-                    font-size: 39px !important;
+                h2{
+                    font-size: 28px;
                 }
-                h1 {
-                    font-size: 79px !important;
+                h1{
+                    font-size: 45px;
                 }
                 a{
-                    font-size: 73px !important;
+                    font-size: 45px;
                 }
             }
         }
@@ -474,6 +474,36 @@ $gray: #4E454A;
     #casino-imgs{
         div:nth-of-type(3){
             background-size: 40%;
+        }
+    }
+    .header-content{
+        div{
+            h2 {
+                font-size: 39px !important;
+            }
+            h1 {
+                font-size: 79px !important;
+            }
+            a{
+                font-size: 73px !important;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1400px) {
+    .header-content{
+        div{
+            h2{
+                font-size: 28px;
+            }
+            h1{
+                font-size: 45px;
+            }
+            a{
+                font-size: 45px;
+            }
         }
     }
 }
