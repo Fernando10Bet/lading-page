@@ -145,7 +145,7 @@ $gray: #4E454A;
             }
             h2 {
                 font-family: "GT-Walsheim-Pro-Bold";
-                font-size: 45px;
+                font-size: 28px;
                 font-weight: bold;
                 margin-bottom: .5rem;
                 font-weight: bold;
@@ -447,31 +447,6 @@ $gray: #4E454A;
     }
 }
 
-@media screen and (min-width: 1051px) {
-    .header-content {
-        max-width: 50% !important;
-        div {
-            &:first-of-type {
-                figure{
-                    img{
-                        width: 120px;
-                        height: 90px;
-                    }
-                }
-                h2{
-                    font-size: 28px !important;
-                }
-                h1{
-                    font-size: 45px !important;
-                }
-                a{
-                    font-size: 45px !important;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (min-width:1750px) {
     #casino-imgs{
         div:nth-of-type(3){
@@ -498,6 +473,32 @@ $gray: #4E454A;
         }
     }
 }
+
+@media screen and (min-width: 1051px) {
+    .header-content {
+        max-width: 50% !important;
+        div {
+            &:first-of-type {
+                figure{
+                    img{
+                        width: 120px;
+                        height: 90px;
+                    }
+                }
+                h2{
+                    font-size: 28px;
+                }
+                h1{
+                    font-size: 45px;
+                }
+                a{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}
+
 
 
 /* @media screen and (min-width:1600px) {
