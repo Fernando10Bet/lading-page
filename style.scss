@@ -144,6 +144,7 @@ $gray: #4E454A;
                 }
             }
             h2 {
+                font-family: "GT-Walsheim-Pro-Bold";
                 font-size: 45px;
                 font-weight: bold;
                 margin-bottom: .5rem;
@@ -160,6 +161,7 @@ $gray: #4E454A;
                 } */
             }
             h1 {
+                font-family: "GT-Walsheim-Pro-Bold";
                 font-size: 45px;
             }
             a {
@@ -452,8 +454,8 @@ $gray: #4E454A;
             &:first-of-type {
                 figure{
                     img{
-                        width: 190px !important;
-                        height: 150px !important;
+                        width: 120px;
+                        height: 90px;
                     }
                 }
                 h2{
@@ -495,6 +497,12 @@ $gray: #4E454A;
 @media screen and (min-width:1400px) {
     .header-content{
         div{
+            figure{
+                img{
+                    width: 190px !important;
+                    height: 150px !important;
+                }
+            }
             h2{
                 font-size: 28px;
             }
