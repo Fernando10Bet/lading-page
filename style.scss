@@ -347,7 +347,7 @@ $gray: #4E454A;
         position: relative;
         background-image: url(./assets/imgs/3.png);
         background-size: 55%;
-        background-position: center 90% !important;
+        background-position: center 80% !important;
         figure {
             @include center();
             position: absolute;
@@ -520,7 +520,7 @@ $gray: #4E454A;
                 background-position: 100% bottom !important;
             }
             &:nth-of-type(3){
-                background-position: center 90% !important;
+                background-position: center 75% !important;
             }
         }
     }

@@ -336,7 +336,7 @@ body {
   position: relative;
   background-image: url(./assets/imgs/3.png);
   background-size: 55%;
-  background-position: center 90% !important;
+  background-position: center 80% !important;
 }
 #casino-imgs div:nth-of-type(3) figure {
   display: flex;
@@ -498,7 +498,7 @@ body {
     background-position: 100% bottom !important;
   }
   #casino-imgs div:nth-of-type(3) {
-    background-position: center 90% !important;
+    background-position: center 75% !important;
   }
 }
 @media screen and (max-width: 1050px) {
