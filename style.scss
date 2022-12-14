@@ -55,6 +55,7 @@ body {
 $green: #3ae67a;
 $white: #ffffff;
 $black: #191919;
+$gray: #4E454A;
 //!----Content-------
 @keyframes boton {
     0% {
@@ -78,7 +79,7 @@ $black: #191919;
     a {
         text-decoration: none;
         font-size: 37px;
-        color: $black;
+        color: $gray   ;
         background-color: $green;
         font-weight: bold;
         padding: 0.4em 1.2em;
@@ -111,6 +112,9 @@ $black: #191919;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media screen and (max-height:700px) {
+            height: 50rem;
+        }
     }
     .header-content {
         padding: 1em;
@@ -142,18 +146,18 @@ $black: #191919;
             h2 {
                 font-size: 45px;
                 font-weight: bold;
-                margin-bottom: 1rem;
+                margin-bottom: .5rem;
                 font-weight: bold;
                 color: $black;
                 @include center;
                 flex-direction: column;
-                &:after {
+/*                 &:after {
                     content: "";
                     height: 2px;
                     width: 100%;
                     background-color: $green;
                     border: 1px solid $green;
-                }
+                } */
             }
             h1 {
                 font-size: 45px;
@@ -163,7 +167,7 @@ $black: #191919;
                 text-decoration: none;
                 background-color: $green;
                 padding: 10px 40px;
-                color: black;
+                color: $gray;
                 border-radius: 10px;
                 font-size: 45px;
                 font-weight: bold;
@@ -342,7 +346,8 @@ $black: #191919;
         align-items: center;
         position: relative;
         background-image: url(./assets/imgs/3.png);
-        background-position: center bottom;
+        background-size: 50%;
+        background-position: center 90%;
         figure {
             @include center();
             position: absolute;
@@ -445,6 +450,12 @@ $black: #191919;
         max-width: 50% !important;
         div {
             &:first-of-type {
+                figure{
+                    img{
+                        width: 190px !important;
+                        height: 150px !important;
+                    }
+                }
                 h2 {
                     font-size: 39px !important;
                 }
@@ -490,6 +501,7 @@ $black: #191919;
         #movilHeader {
             display: flex !important;
             width: 100%;
+            order: 2;
             @include center;
             img {
                 width: 120%;
@@ -519,6 +531,16 @@ $black: #191919;
                 a {
                     font-size: 32px !important;
                     margin-bottom: 0.5em;
+                }
+                &:nth-of-type(1){
+                    order: 1;
+                }
+                &:nth-of-type(2){
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    order: 3;
+                    margin-top: 1rem;
                 }
             }
         }
@@ -551,6 +573,17 @@ $black: #191919;
         figure {
             img {
                 width: 40% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .header-steps{
+        div{
+            padding: 0 10px !important;
+            p{
+                justify-content: space-between !important;
             }
         }
     }

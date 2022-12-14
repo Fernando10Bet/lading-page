@@ -52,7 +52,7 @@ body {
 .btn_join a {
   text-decoration: none;
   font-size: 37px;
-  color: #191919;
+  color: #4E454A;
   background-color: #3ae67a;
   font-weight: bold;
   padding: 0.4em 1.2em;
@@ -88,6 +88,11 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (max-height: 700px) {
+  .landing-header .header-bg {
+    height: 50rem;
+  }
+}
 .landing-header .header-content {
   padding: 1em;
   display: flex;
@@ -122,20 +127,20 @@ body {
 .landing-header .header-content div:first-of-type h2 {
   font-size: 45px;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: #191919;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.landing-header .header-content div:first-of-type h2:after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: #3ae67a;
-  border: 1px solid #3ae67a;
+  /*                 &:after {
+                      content: "";
+                      height: 2px;
+                      width: 100%;
+                      background-color: $green;
+                      border: 1px solid $green;
+                  } */
 }
 .landing-header .header-content div:first-of-type h1 {
   font-size: 45px;
@@ -145,7 +150,7 @@ body {
   text-decoration: none;
   background-color: #3ae67a;
   padding: 10px 40px;
-  color: black;
+  color: #4E454A;
   border-radius: 10px;
   font-size: 45px;
   font-weight: bold;
@@ -330,7 +335,8 @@ body {
   align-items: center;
   position: relative;
   background-image: url(./assets/imgs/3.png);
-  background-position: center bottom;
+  background-size: 50%;
+  background-position: center 90%;
 }
 #casino-imgs div:nth-of-type(3) figure {
   display: flex;
@@ -439,6 +445,10 @@ body {
   .header-content {
     max-width: 50% !important;
   }
+  .header-content div:first-of-type figure img {
+    width: 190px !important;
+    height: 150px !important;
+  }
   .header-content div:first-of-type h2 {
     font-size: 39px !important;
   }
@@ -480,6 +490,7 @@ body {
   .landing-header #movilHeader {
     display: flex !important;
     width: 100%;
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,6 +527,16 @@ body {
     font-size: 32px !important;
     margin-bottom: 0.5em;
   }
+  .landing-header .header-content div:nth-of-type(1) {
+    order: 1;
+  }
+  .landing-header .header-content div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 3;
+    margin-top: 1rem;
+  }
   .header-steps {
     height: auto !important;
     flex-wrap: wrap;
@@ -537,6 +558,14 @@ body {
   }
   .segob figure img {
     width: 40% !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-steps div {
+    padding: 0 10px !important;
+  }
+  .header-steps div p {
+    justify-content: space-between !important;
   }
 }
 @media screen and (max-width: 400px) {
