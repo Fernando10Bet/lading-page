@@ -104,9 +104,11 @@ $gray: #4E454A;
         margin-top: 2rem;
     }
     .header-bg {
-        background-image: url(./assets/header/bg.png);
-        @include bgCenter();
-        min-height: 100vh;
+        background-image: url(./assets/header/CASINO_characthers.png);
+        background-size: 55% 100%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        min-height: 110vh;
         height: 40rem;
         width: 100%;
         display: flex;
@@ -117,7 +119,7 @@ $gray: #4E454A;
         }
     }
     .header-content {
-        padding: 1em;
+        padding: 2em;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -193,15 +195,13 @@ $gray: #4E454A;
     #ficha {
         width: 15%;
         left: 60%;
-        top: 76vh;
+        top: 90vh;
     }
 }
 
 .main-landing {
     @include center;
     width: 100%;
-    background-image: url(./assets/bg.png);
-    @include bgCenter();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +212,7 @@ $gray: #4E454A;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     height: auto;
     box-sizing: border-box;
     div {
@@ -220,21 +220,27 @@ $gray: #4E454A;
         width: calc(100% / 3);
         @include center;
         min-height: 3rem;
-        padding: 1em 0em;
+        height: auto;
+        padding: 1.5em 0em;
         p {
             font-family: "GT-Walsheim-Pro-Bold" !important;
             font-weight: bold;
             text-align: center;
             font-size: 30px;
             height: 100%;
-            width: 100%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        span{
+            font-size: 69px;
+            font-family: "GT-Walsheim-Pro-Bold" !important;
+            font-weight: bold;
+            padding-right: 1rem;
+            width: 20%;
             @include center;
-            span{
-                font-size: 69px;
-                font-family: "GT-Walsheim-Pro-Bold" !important;
-                font-weight: bold;
-                padding-right: 1rem;
-            }
         }
         &:nth-of-type(1) {
             background-color: $black;
@@ -260,7 +266,7 @@ $gray: #4E454A;
     flex-wrap: wrap;
     box-sizing: border-box;
     div {
-        height: 24rem;
+        height: 22rem;
         max-height: 25rem;
         width: 31%;
         max-width: 42rem;
@@ -474,7 +480,7 @@ $gray: #4E454A;
     }
 }
 
-@media screen and (min-width: 1051px) {
+@media screen and (min-width: 1101px) {
     .header-content {
         max-width: 50% !important;
         div {
@@ -537,7 +543,7 @@ $gray: #4E454A;
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1100px) {
     body {
         background-image: url(./assets/bg.png) !important;
     }
@@ -602,10 +608,13 @@ $gray: #4E454A;
             width: 100% !important;
             height: 6em;
             p{
+                width: 85% !important;
                 justify-content: flex-start;
-                span{
-                    margin-right: 0 !important;
-                }
+                text-align: left;
+            }
+            span{
+                width: 15% !important;
+                margin-right: 0 !important;
             }
         }
     }
@@ -613,9 +622,8 @@ $gray: #4E454A;
     #casino-imgs {
         padding: 2em 0em !important;
         div {
-            width: 90% !important;
+            width: 95% !important;
             margin-bottom: 2rem;
-            max-width: 30rem;
         }
     }
 
@@ -680,6 +688,11 @@ $gray: #4E454A;
             img {
                 width: 80% !important;
             }
+        }
+    }
+    #casino-imgs {
+        div {
+            height: 18rem !important;
         }
     }
 }
