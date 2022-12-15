@@ -117,8 +117,8 @@ body {
   margin-bottom: 2rem;
 }
 .landing-header .header-content div:first-of-type figure img {
-  width: 120px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
 }
 .landing-header .header-content div:first-of-type figure figcaption {
   font-weight: bold;
@@ -449,7 +449,7 @@ body {
   }
   .header-content div figure img {
     width: 190px !important;
-    height: 150px !important;
+    height: 190px !important;
   }
   .header-content div h2 {
     font-size: 39px !important;
@@ -466,7 +466,7 @@ body {
     max-width: 50% !important;
   }
   .header-content div:first-of-type figure img {
-    width: 120px;
+    width: 100px;
     height: 90px;
   }
   .header-content div:first-of-type h2 {
@@ -533,8 +533,8 @@ body {
     align-items: center;
   }
   .landing-header #movilHeader img {
-    width: 120%;
-    height: 100%;
+    width: 95%;
+    height: 60%;
   }
   .landing-header .header-bg {
     background-image: url(./assets/header/sdfsdf.png);
@@ -581,6 +581,9 @@ body {
   .header-steps div {
     width: 100% !important;
     height: 6em;
+  }
+  .header-steps div p {
+    justify-content: flex-start;
   }
   .header-steps div p span {
     margin-right: 0 !important;

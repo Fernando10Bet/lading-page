@@ -135,8 +135,8 @@ $gray: #4E454A;
                 gap: 0.5em;
                 margin-bottom: 2rem;
                 img {
-                    width: 120px;
-                    height: 90px;
+                    width: 110px;
+                    height: 110px;
                 }
                 figcaption {
                     font-weight: bold;
@@ -458,7 +458,7 @@ $gray: #4E454A;
             figure{
                 img{
                     width: 190px !important;
-                    height: 150px !important;
+                    height: 190px !important;
                 }
             }
             h2 {
@@ -481,7 +481,7 @@ $gray: #4E454A;
             &:first-of-type {
                 figure{
                     img{
-                        width: 120px;
+                        width: 100px;
                         height: 90px;
                     }
                 }
@@ -553,8 +553,8 @@ $gray: #4E454A;
             order: 2;
             @include center;
             img {
-                width: 120%;
-                height: 100%;
+                width: 95%;
+                height: 60%;
             }
         }
         .header-bg {
@@ -602,6 +602,7 @@ $gray: #4E454A;
             width: 100% !important;
             height: 6em;
             p{
+                justify-content: flex-start;
                 span{
                     margin-right: 0 !important;
                 }
