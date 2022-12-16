@@ -85,13 +85,26 @@ body {
   height: 40rem;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-height: 700px) {
   .landing-header .header-bg {
     height: 50rem;
   }
+}
+.landing-header .btn-ingresa {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
+}
+.landing-header .btn-ingresa a {
+  font-family: "GT-Walsheim-Pro-Bold";
+  text-decoration: none;
+  color: #191919;
+  font-size: 28px;
 }
 .landing-header .header-content {
   padding: 2em;
@@ -575,6 +588,13 @@ body {
     align-items: center;
     order: 3;
     margin-top: 1rem;
+  }
+  .landing-header .btn-ingresa {
+    height: auto !important;
+    align-self: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .header-steps {
     height: auto !important;
