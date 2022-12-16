@@ -676,6 +676,10 @@ body {
   #casino-imgs div {
     height: 18rem !important;
   }
+  .payments-imgs {
+    border-bottom: 1px solid #191919 !important;
+    padding-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
