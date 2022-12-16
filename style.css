@@ -427,7 +427,7 @@ body {
   text-justify: auto;
   font-size: 12px;
 }
-#casino-terms ol li ol {
+#casino-terms ol li ol, #casino-terms ol li ul {
   list-style-position: inside;
   display: flex;
   flex-direction: column;
