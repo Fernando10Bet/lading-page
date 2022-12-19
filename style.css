@@ -318,7 +318,7 @@ body {
   background-color: #3ae67a;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   position: relative;
   background-image: url(./assets/imgs/2.png);
   background-position: 40% bottom !important;
