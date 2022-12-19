@@ -524,7 +524,7 @@ body {
     background-position: 100% bottom !important;
   }
   #casino-imgs div:nth-of-type(3) {
-    background-size: 52%;
+    background-size: 40%;
     background-position: center 75% !important;
   }
 }
@@ -618,7 +618,7 @@ body {
   }
   #casino-imgs div {
     width: 95% !important;
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
   }
   .segob figure img {
     width: 40% !important;
@@ -631,6 +631,10 @@ body {
   }
   .header-steps div p {
     justify-content: flex-start !important;
+  }
+  #casino-imgs div:nth-of-type(3) {
+    background-size: 45%;
+    background-position: center 75% !important;
   }
 }
 @media screen and (max-width: 400px) {

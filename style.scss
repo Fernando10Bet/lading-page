@@ -549,7 +549,7 @@ $gray: #4E454A;
                 background-position: 100% bottom !important;
             }
             &:nth-of-type(3){
-                background-size: 52%;
+                background-size: 40%;
                 background-position: center 75% !important;
             }
         }
@@ -643,7 +643,7 @@ $gray: #4E454A;
         padding: 2em 0em !important;
         div {
             width: 95% !important;
-            margin-bottom: 2rem;
+            margin-bottom: .1rem;
         }
     }
 
@@ -663,6 +663,14 @@ $gray: #4E454A;
             column-gap: 10px;
             p{
                 justify-content: flex-start !important;
+            }
+        }
+    }
+    #casino-imgs{
+        div{
+            &:nth-of-type(3){
+                background-size: 45%;
+                background-position: center 75% !important;
             }
         }
     }
