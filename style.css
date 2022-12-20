@@ -258,6 +258,19 @@ body {
   background-color: #3ae67a;
   color: #191919;
 }
+.header-steps div:nth-of-type(2) p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto !important;
+}
+.header-steps div:nth-of-type(2) p i {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 .header-steps div:nth-of-type(3) {
   background-color: #191919;
   color: #3ae67a;
