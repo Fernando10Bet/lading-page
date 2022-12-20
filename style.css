@@ -76,11 +76,10 @@ body {
   display: none;
 }
 .landing-header .header-bg {
-  background-image: url(./assets/header/CASINO_characthers.png);
-  background-size: contain;
+  background-size: 75% 40%;
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 40rem;
+  height: calc(100vh - 8rem);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -113,6 +112,17 @@ body {
   max-width: 40%;
   height: 100%;
 }
+.landing-header .header-content .bgHeader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 95%;
+  background-image: url(./assets/header/casino3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80% bottom;
+}
 .landing-header .header-content div:first-of-type {
   display: flex;
   flex-direction: column;
@@ -137,9 +147,8 @@ body {
 }
 .landing-header .header-content div:first-of-type h2 {
   font-family: "GT-Walsheim-Pro-Bold";
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 0.1rem;
   font-weight: bold;
   color: #191919;
   display: flex;
@@ -156,7 +165,7 @@ body {
 }
 .landing-header .header-content div:first-of-type h1 {
   font-family: "GT-Walsheim-Pro-Bold";
-  font-size: 45px;
+  font-size: 35px;
 }
 .landing-header .header-content div:first-of-type a {
   margin-top: 2rem;
@@ -165,7 +174,7 @@ body {
   padding: 10px 40px;
   color: #4e454a;
   border-radius: 10px;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
 }
 .landing-header .header-content div:last-of-type p {
@@ -217,9 +226,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 3rem;
-  height: auto;
-  padding: 1.5em 0em;
+  min-height: 8rem;
 }
 .header-steps div p {
   font-family: "GT-Walsheim-Pro-Bold" !important;
@@ -468,17 +475,17 @@ body {
     background-size: 40%;
   }
   .header-content div figure img {
-    width: 190px !important;
-    height: 190px !important;
+    width: 110px !important;
+    height: 110px !important;
   }
   .header-content div h2 {
-    font-size: 39px !important;
+    font-size: 22px !important;
   }
   .header-content div h1 {
-    font-size: 79px !important;
+    font-size: 42px !important;
   }
   .header-content div a {
-    font-size: 73px !important;
+    font-size: 40px !important;
   }
 }
 @media screen and (min-width: 1101px) {
@@ -516,6 +523,10 @@ body {
     }
 } */
 @media screen and (max-width: 1250px) {
+  .bgHeader {
+    background-size: 55% !important;
+    background-position: right bottom !important;
+  }
   #casino-imgs {
     row-gap: 1.5rem;
   }
@@ -534,6 +545,9 @@ body {
   }
 }
 @media screen and (max-width: 1100px) {
+  .bgHeader {
+    display: none !important;
+  }
   body {
     background-image: url(./assets/bg.png) !important;
   }
@@ -553,20 +567,15 @@ body {
     width: 100%;
     order: 2;
     margin-top: 0.2em !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .landing-header #movilHeader img {
-    width: 95%;
-    height: 60%;
+    height: 40rem;
+    background-image: url(./assets/header/casino3.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .landing-header .header-bg {
-    background-image: url(./assets/header/sdfsdf.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
+    background-image: none;
+    height: auto !important;
   }
   .landing-header .header-content {
     width: 100% !important;
@@ -574,6 +583,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 1.4em !important;
+    background-image: none !important;
   }
   .landing-header .header-content div {
     width: 100%;
@@ -653,6 +663,11 @@ body {
     width: 40% !important;
   }
 }
+@media screen and (max-width: 900px) {
+  #movilHeader {
+    background-size: contain !important;
+  }
+}
 @media screen and (max-width: 650px) {
   .header-steps div {
     padding: 0 10px !important;
@@ -665,8 +680,19 @@ body {
     background-size: 45%;
     background-position: center 75% !important;
   }
+  #movilHeader {
+    height: 35rem !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  #movilHeader {
+    height: 25rem !important;
+  }
 }
 @media screen and (max-width: 400px) {
+  #movilHeader {
+    height: 20rem !important;
+  }
   .landing-header .header-bg {
     height: auto;
     max-width: 100%;

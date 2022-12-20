@@ -110,11 +110,10 @@ $gray: #4e454a;
         display: none;
     }
     .header-bg {
-        background-image: url(./assets/header/CASINO_characthers.png);
-        background-size: contain;
+        background-size: 75% 40%;
         background-repeat: no-repeat;
         background-position: right bottom;
-        height: 40rem;
+        height: calc(100vh - 8rem);
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -144,6 +143,17 @@ $gray: #4e454a;
         flex-direction: column;
         max-width: 40%;
         height: 100%;
+        .bgHeader{
+            position: absolute;
+            right:0;
+            bottom: 0;
+            width: 100%;
+            height: 95%;
+            background-image: url(./assets/header/casino3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 80% bottom;
+        }
         div:first-of-type {
             display: flex;
             flex-direction: column;
@@ -165,9 +175,8 @@ $gray: #4e454a;
             }
             h2 {
                 font-family: "GT-Walsheim-Pro-Bold";
-                font-size: 28px;
+                font-size: 20px;
                 font-weight: bold;
-                margin-bottom: 0.1rem;
                 font-weight: bold;
                 color: $black;
                 @include center;
@@ -182,7 +191,7 @@ $gray: #4e454a;
             }
             h1 {
                 font-family: "GT-Walsheim-Pro-Bold";
-                font-size: 45px;
+                font-size: 35px;
             }
             a {
                 margin-top: 2rem;
@@ -191,7 +200,7 @@ $gray: #4e454a;
                 padding: 10px 40px;
                 color: $gray;
                 border-radius: 10px;
-                font-size: 45px;
+                font-size: 35px;
                 font-weight: bold;
             }
         }
@@ -243,9 +252,7 @@ $gray: #4e454a;
         box-sizing: border-box;
         width: calc(100% / 3);
         @include center;
-        min-height: 3rem;
-        height: auto;
-        padding: 1.5em 0em;
+        min-height: 8rem;
         p {
             font-family: "GT-Walsheim-Pro-Bold" !important;
             font-weight: bold;
@@ -488,18 +495,18 @@ $gray: #4e454a;
         div {
             figure {
                 img {
-                    width: 190px !important;
-                    height: 190px !important;
+                    width: 110px !important;
+                    height: 110px !important;
                 }
             }
             h2 {
-                font-size: 39px !important;
+                font-size: 22px !important;
             }
             h1 {
-                font-size: 79px !important;
+                font-size: 42px !important;
             }
             a {
-                font-size: 73px !important;
+                font-size: 40px !important;
             }
         }
     }
@@ -548,6 +555,10 @@ $gray: #4e454a;
 } */
 
 @media screen and (max-width: 1250px) {
+    .bgHeader{
+        background-size: 55% !important;
+        background-position: right bottom !important;
+    }
     #casino-imgs {
         row-gap: 1.5rem;
         div {
@@ -567,6 +578,9 @@ $gray: #4e454a;
 }
 
 @media screen and (max-width: 1100px) {
+    .bgHeader{
+        display: none !important;
+    }
     body {
         background-image: url(./assets/bg.png) !important;
     }
@@ -587,16 +601,15 @@ $gray: #4e454a;
             width: 100%;
             order: 2;
             margin-top: 0.2em !important;
-            @include center;
-            img {
-                width: 95%;
-                height: 60%;
-            }
+            height: 40rem;
+            background-image: url(./assets/header/casino3.png);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .header-bg {
-            background-image: url(./assets/header/sdfsdf.png);
-            @include bgCenter();
-            height: auto;
+            background-image: none;
+            height: auto !important;
         }
         .header-content {
             width: 100% !important;
@@ -604,6 +617,7 @@ $gray: #4e454a;
             justify-content: flex-start;
             align-items: flex-start;
             padding: 1.4em !important;
+            background-image: none !important;
             div {
                 width: 100%;
                 h2,
@@ -692,6 +706,12 @@ $gray: #4e454a;
     }
 }
 
+@media screen and (max-width:900px) {
+    #movilHeader{
+        background-size: contain !important;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .header-steps {
         div {
@@ -710,9 +730,22 @@ $gray: #4e454a;
             }
         }
     }
+    #movilHeader{
+        height: 35rem !important;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    #movilHeader{
+        height: 25rem !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    #movilHeader{
+        height: 20rem !important;
+    }
     .landing-header {
         .header-bg {
             height: auto;
