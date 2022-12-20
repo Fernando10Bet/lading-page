@@ -471,6 +471,9 @@ body {
 }
 
 @media screen and (min-width: 1750px) {
+  .bgHeader {
+    background-position: 65% bottom !important;
+  }
   #casino-imgs div:nth-of-type(3) {
     background-size: 40%;
   }
