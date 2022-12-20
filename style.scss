@@ -597,7 +597,6 @@ $gray: #4e454a;
             background-image: url(./assets/header/sdfsdf.png);
             @include bgCenter();
             height: auto;
-            min-height: auto !important;
         }
         .header-content {
             width: 100% !important;

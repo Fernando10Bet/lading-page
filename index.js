@@ -8,10 +8,14 @@ let boton = document.querySelector('.btn_join');
 
 let alto_contenido = document.querySelector('.header-bg');
 
-if (window.screen.width > 1050) {
+if (window.screen.width >= 1100) {
     alto_contenido.style.height = `calc(100vh - ${alto_pasos}px)`
-    window.onresize = function () {
+}
+window.onresize = function () {
+    if(window.screen.width >= 1100){
         alto_contenido.style.height = `calc(100vh - ${alto_pasos}px)`
+    }else{
+        alto_contenido.style.height = `auto`
     }
 }
 

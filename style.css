@@ -567,7 +567,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    min-height: auto !important;
   }
   .landing-header .header-content {
     width: 100% !important;
