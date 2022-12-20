@@ -52,7 +52,7 @@ body {
 .btn_join a {
   text-decoration: none;
   font-size: 37px;
-  color: #4E454A;
+  color: #4e454a;
   background-color: #3ae67a;
   font-weight: bold;
   padding: 0.4em 1.2em;
@@ -74,14 +74,12 @@ body {
 }
 .landing-header #movilHeader {
   display: none;
-  margin-top: 2rem;
 }
 .landing-header .header-bg {
   background-image: url(./assets/header/CASINO_characthers.png);
-  background-size: 55% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
-  min-height: 110vh;
   height: 40rem;
   width: 100%;
   display: flex;
@@ -130,8 +128,8 @@ body {
   margin-bottom: 2rem;
 }
 .landing-header .header-content div:first-of-type figure img {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
 }
 .landing-header .header-content div:first-of-type figure figcaption {
   font-weight: bold;
@@ -141,7 +139,7 @@ body {
   font-family: "GT-Walsheim-Pro-Bold";
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
   font-weight: bold;
   color: #191919;
   display: flex;
@@ -149,12 +147,12 @@ body {
   align-items: center;
   flex-direction: column;
   /*                 &:after {
-                      content: "";
-                      height: 2px;
-                      width: 100%;
-                      background-color: $green;
-                      border: 1px solid $green;
-                  } */
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $green;
+      border: 1px solid $green;
+  } */
 }
 .landing-header .header-content div:first-of-type h1 {
   font-family: "GT-Walsheim-Pro-Bold";
@@ -165,7 +163,7 @@ body {
   text-decoration: none;
   background-color: #3ae67a;
   padding: 10px 40px;
-  color: #4E454A;
+  color: #4e454a;
   border-radius: 10px;
   font-size: 45px;
   font-weight: bold;
@@ -174,7 +172,8 @@ body {
   font-size: 12px;
 }
 .landing-header #dados,
-.landing-header #ficha {
+.landing-header #ficha,
+.landing-header #ficha2 {
   position: absolute;
   clear: both;
 }
@@ -186,6 +185,11 @@ body {
   width: 15%;
   left: 60%;
   top: 82vh;
+}
+.landing-header #ficha2 {
+  width: 320px;
+  left: 25%;
+  top: 60%;
 }
 
 .main-landing {
@@ -427,7 +431,8 @@ body {
   text-justify: auto;
   font-size: 12px;
 }
-#casino-terms ol li ol, #casino-terms ol li ul {
+#casino-terms ol li ol,
+#casino-terms ol li ul {
   list-style-position: inside;
   display: flex;
   flex-direction: column;
@@ -532,8 +537,12 @@ body {
   body {
     background-image: url(./assets/bg.png) !important;
   }
+  .btn_join a {
+    font-size: 24px !important;
+  }
   #dados,
-#ficha {
+#ficha,
+#ficha2 {
     display: none !important;
   }
   .landing-header {
@@ -543,6 +552,7 @@ body {
     display: flex !important;
     width: 100%;
     order: 2;
+    margin-top: 0.2em !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,6 +574,7 @@ body {
     max-width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 1.4em !important;
   }
   .landing-header .header-content div {
     width: 100%;
@@ -571,16 +582,32 @@ body {
   .landing-header .header-content div h2,
 .landing-header .header-content div h1 {
     text-align: left;
-    font-size: 32px !important;
     width: auto !important;
     max-width: 90%;
   }
+  .landing-header .header-content div h2 {
+    font-size: 26px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 28px;
+  }
+  .landing-header .header-content div h1 {
+    font-size: 32px !important;
+    padding: 0 !important;
+    line-height: 36px;
+  }
   .landing-header .header-content div a {
     font-size: 32px !important;
-    margin-bottom: 0.5em;
+    padding: 4px 20px !important;
   }
   .landing-header .header-content div:nth-of-type(1) {
     order: 1;
+  }
+  .landing-header .header-content div:nth-of-type(1) figure {
+    margin-bottom: 0.5em !important;
+  }
+  .landing-header .header-content div:nth-of-type(1) a {
+    margin-top: 0.8rem !important;
   }
   .landing-header .header-content div:nth-of-type(2) {
     display: flex;
@@ -595,6 +622,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .landing-header .btn-ingresa a {
+    font-size: 20px !important;
   }
   .header-steps {
     height: auto !important;

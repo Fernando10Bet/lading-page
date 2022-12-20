@@ -2,20 +2,28 @@
     font-family: "GT-Walsheim-Pro-Bold";
     src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot");
     /* IE9 Compat Modes */
-    src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot?#iefix") format("embedded-opentype"),
-        /* IE6-IE8 */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff2") format("woff2"),
-        /* Super Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff") format("woff"),
-        /* Pretty Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf") format("truetype");
+    src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff")
+            format("woff"),
+        /* Pretty Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf")
+            format("truetype");
     /* Legacy iOS */
 }
 @font-face {
     font-family: "GT-Walsheim-Pro-Regular";
     src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot");
     /* IE9 Compat Modes */
-    src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot?#iefix") format("embedded-opentype"),
-        /* IE6-IE8 */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff2") format("woff2"),
-        /* Super Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"),
-        /* Pretty Modern Browsers */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype");
+    src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */
+            url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"),
+        /* Pretty Modern Browsers */
+            url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype");
     /* Legacy iOS */
 }
 
@@ -38,7 +46,6 @@
     flex-direction: column;
 }
 
-
 * {
     font-family: "GT-Walsheim-Pro-Regular";
     margin: 0;
@@ -55,7 +62,7 @@ body {
 $green: #3ae67a;
 $white: #ffffff;
 $black: #191919;
-$gray: #4E454A;
+$gray: #4e454a;
 //!----Content-------
 @keyframes boton {
     0% {
@@ -79,7 +86,7 @@ $gray: #4E454A;
     a {
         text-decoration: none;
         font-size: 37px;
-        color: $gray   ;
+        color: $gray;
         background-color: $green;
         font-weight: bold;
         padding: 0.4em 1.2em;
@@ -101,33 +108,31 @@ $gray: #4E454A;
     overflow: hidden;
     #movilHeader {
         display: none;
-        margin-top: 2rem;
     }
     .header-bg {
         background-image: url(./assets/header/CASINO_characthers.png);
-        background-size: 55% 100%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: right bottom;
-        min-height: 110vh;
         height: 40rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media screen and (max-height:700px) {
+        @media screen and (max-height: 700px) {
             height: 50rem;
         }
     }
-    .btn-ingresa{
+    .btn-ingresa {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         padding: 1em;
-        a{
+        a {
             font-family: "GT-Walsheim-Pro-Bold";
             text-decoration: none;
-            color:$black;
+            color: $black;
             font-size: 28px;
         }
     }
@@ -150,8 +155,8 @@ $gray: #4E454A;
                 gap: 0.5em;
                 margin-bottom: 2rem;
                 img {
-                    width: 110px;
-                    height: 110px;
+                    width: 80px;
+                    height: 80px;
                 }
                 figcaption {
                     font-weight: bold;
@@ -162,12 +167,12 @@ $gray: #4E454A;
                 font-family: "GT-Walsheim-Pro-Bold";
                 font-size: 28px;
                 font-weight: bold;
-                margin-bottom: .5rem;
+                margin-bottom: 0.1rem;
                 font-weight: bold;
                 color: $black;
                 @include center;
                 flex-direction: column;
-/*                 &:after {
+                /*                 &:after {
                     content: "";
                     height: 2px;
                     width: 100%;
@@ -197,7 +202,8 @@ $gray: #4E454A;
         }
     }
     #dados,
-    #ficha {
+    #ficha,
+    #ficha2 {
         position: absolute;
         clear: both;
     }
@@ -209,6 +215,11 @@ $gray: #4E454A;
         width: 15%;
         left: 60%;
         top: 82vh;
+    }
+    #ficha2 {
+        width: 320px;
+        left: calc(25%);
+        top: calc(60%);
     }
 }
 
@@ -247,7 +258,7 @@ $gray: #4E454A;
             justify-content: flex-start;
             text-align: left;
         }
-        span{
+        span {
             font-size: 69px;
             font-family: "GT-Walsheim-Pro-Bold" !important;
             font-weight: bold;
@@ -434,7 +445,8 @@ $gray: #4E454A;
             text-align: justify;
             text-justify: auto;
             font-size: 12px;
-            ol,ul {
+            ol,
+            ul {
                 list-style-position: inside;
                 display: flex;
                 flex-direction: column;
@@ -466,16 +478,16 @@ $gray: #4E454A;
     }
 }
 
-@media screen and (min-width:1750px) {
-    #casino-imgs{
-        div:nth-of-type(3){
+@media screen and (min-width: 1750px) {
+    #casino-imgs {
+        div:nth-of-type(3) {
             background-size: 40%;
         }
     }
-    .header-content{
-        div{
-            figure{
-                img{
+    .header-content {
+        div {
+            figure {
+                img {
                     width: 190px !important;
                     height: 190px !important;
                 }
@@ -486,7 +498,7 @@ $gray: #4E454A;
             h1 {
                 font-size: 79px !important;
             }
-            a{
+            a {
                 font-size: 73px !important;
             }
         }
@@ -498,27 +510,25 @@ $gray: #4E454A;
         max-width: 50% !important;
         div {
             &:first-of-type {
-                figure{
-                    img{
+                figure {
+                    img {
                         width: 100px;
                         height: 90px;
                     }
                 }
-                h2{
+                h2 {
                     font-size: 28px;
                 }
-                h1{
+                h1 {
                     font-size: 45px;
                 }
-                a{
+                a {
                     font-size: 45px;
                 }
             }
         }
     }
 }
-
-
 
 /* @media screen and (min-width:1600px) {
     .header-content{
@@ -537,18 +547,18 @@ $gray: #4E454A;
     }
 } */
 
-@media screen and (max-width:1250px) {
-    #casino-imgs{
+@media screen and (max-width: 1250px) {
+    #casino-imgs {
         row-gap: 1.5rem;
-        div{
+        div {
             width: 45%;
-            &:nth-of-type(1){
+            &:nth-of-type(1) {
                 background-position: 90% bottom !important;
             }
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
                 background-position: 100% bottom !important;
             }
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
                 background-size: 40%;
                 background-position: center 75% !important;
             }
@@ -560,8 +570,14 @@ $gray: #4E454A;
     body {
         background-image: url(./assets/bg.png) !important;
     }
+    .btn_join {
+        a {
+            font-size: 24px !important;
+        }
+    }
     #dados,
-    #ficha {
+    #ficha,
+    #ficha2 {
         display: none !important;
     }
     .landing-header {
@@ -570,6 +586,7 @@ $gray: #4E454A;
             display: flex !important;
             width: 100%;
             order: 2;
+            margin-top: 0.2em !important;
             @include center;
             img {
                 width: 95%;
@@ -587,23 +604,40 @@ $gray: #4E454A;
             max-width: 100%;
             justify-content: flex-start;
             align-items: flex-start;
-            div{
+            padding: 1.4em !important;
+            div {
                 width: 100%;
                 h2,
                 h1 {
                     text-align: left;
-                    font-size: 32px !important;
                     width: auto !important;
                     max-width: 90%;
                 }
+                h2 {
+                    font-size: 26px !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    line-height: 28px;
+                }
+                h1 {
+                    font-size: 32px !important;
+                    padding: 0 !important;
+                    line-height: 36px;
+                }
                 a {
                     font-size: 32px !important;
-                    margin-bottom: 0.5em;
+                    padding: 4px 20px !important;
                 }
-                &:nth-of-type(1){
+                &:nth-of-type(1) {
                     order: 1;
+                    figure {
+                        margin-bottom: 0.5em !important;
+                    }
+                    a {
+                        margin-top: 0.8rem !important;
+                    }
                 }
-                &:nth-of-type(2){
+                &:nth-of-type(2) {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -612,12 +646,15 @@ $gray: #4E454A;
                 }
             }
         }
-        .btn-ingresa{
+        .btn-ingresa {
             height: auto !important;
             align-self: flex-start;
             position: absolute;
-            top:0;
+            top: 0;
             right: 0;
+            a {
+                font-size: 20px !important;
+            }
         }
     }
 
@@ -627,12 +664,12 @@ $gray: #4E454A;
         div {
             width: 100% !important;
             height: 8.3em;
-            p{
+            p {
                 width: 85% !important;
                 justify-content: flex-start;
                 text-align: left;
             }
-            span{
+            span {
                 width: 15% !important;
                 margin-right: 0 !important;
             }
@@ -643,7 +680,7 @@ $gray: #4E454A;
         padding: 2em 0em !important;
         div {
             width: 95% !important;
-            margin-bottom: .1rem;
+            margin-bottom: 0.1rem;
         }
     }
 
@@ -656,19 +693,19 @@ $gray: #4E454A;
     }
 }
 
-@media screen and (max-width:650px){
-    .header-steps{
-        div{
+@media screen and (max-width: 650px) {
+    .header-steps {
+        div {
             padding: 0 10px !important;
             column-gap: 10px;
-            p{
+            p {
                 justify-content: flex-start !important;
             }
         }
     }
-    #casino-imgs{
-        div{
-            &:nth-of-type(3){
+    #casino-imgs {
+        div {
+            &:nth-of-type(3) {
                 background-size: 45%;
                 background-position: center 75% !important;
             }
@@ -723,7 +760,7 @@ $gray: #4E454A;
             height: 18rem !important;
         }
     }
-    .payments-imgs{
+    .payments-imgs {
         border-bottom: 1px solid $black !important;
         padding-bottom: 1em;
     }
