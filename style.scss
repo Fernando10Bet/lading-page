@@ -54,8 +54,8 @@
 }
 body {
     position: relative;
-    background-image: url(./assets/bg.png) !important;
     @include bgCenter();
+    background:white;
 }
 //!colors
 
